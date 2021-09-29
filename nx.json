@@ -27,12 +27,34 @@
     ]
   },
   "projects": {
+    "backend-api": {
+      "tags": []
+    },
+    "backend-api-e2e": {
+      "tags": [],
+      "implicitDependencies": ["backend-api"]
+    },
+    "common": {
+      "tags": []
+    },
     "frontend-app": {
       "tags": []
     },
     "frontend-app-e2e": {
       "tags": [],
       "implicitDependencies": ["frontend-app"]
+    },
+    "ui": {
+      "tags": []
+    },
+    "user-profiles": {
+      "tags": []
+    },
+    "user-signup": {
+      "tags": []
+    },
+    "user-system": {
+      "tags": []
     }
   }
 }

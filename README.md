@@ -1,3 +1,20 @@
+# 
+
+This repo is intended an example Nx workspace to accompony the REWIND XRLO article dicussing Nx.
+# Step 1 Initilise worksapce
+```
+npx create-nx-workspace --preset=react
+```
+# Step 2 Generate Libraries and App
+```
+yarn nx generate @nrwl/react:library --name=common --style=none --no-interactive
+yarn nx generate @nrwl/react:library --name=ui --style=none --no-interactive
+yarn nx generate @nrwl/react:library --name=user-system --style=none --no-interactive
+yarn nx generate @nrwl/react:library --name=user-signup --style=none --no-interactive
+yarn nx generate @nrwl/react:library --name=user-profiles --style=none --no-interactive
+yarn nx generate @nrwl/web:application --name=backend-api --no-interactive
+```
+
 
 
 # NxWorkspaceExample
