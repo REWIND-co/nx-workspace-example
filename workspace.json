@@ -123,6 +123,28 @@
         }
       }
     },
+    "ecs": {
+      "root": "libs/ecs",
+      "sourceRoot": "libs/ecs/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/ecs/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ecs"],
+          "options": {
+            "jestConfig": "libs/ecs/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "frontend-app": {
       "root": "apps/frontend-app",
       "sourceRoot": "apps/frontend-app/src",

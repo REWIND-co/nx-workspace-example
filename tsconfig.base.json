@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@nx-workspace-example/common": ["libs/common/src/index.ts"],
+      "@nx-workspace-example/ecs": ["libs/ecs/src/index.ts"],
       "@nx-workspace-example/ui": ["libs/ui/src/index.ts"],
       "@nx-workspace-example/user-profiles": [
         "libs/user-profiles/src/index.ts"

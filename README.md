@@ -15,6 +15,12 @@ yarn nx generate @nrwl/react:library --name=user-profiles --style=none --no-inte
 yarn nx generate @nrwl/web:application --name=backend-api --no-interactive
 ```
 
+# Step 3 Generate generator structure, and our ecs lib
+```
+nx generate @nrwl/workspace:workspace-generator ecs-component-generator
+nx generate @nrwl/workspace:library --name=ecs --no-interactive
+```
+
 
 
 # NxWorkspaceExample

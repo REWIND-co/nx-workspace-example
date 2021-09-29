@@ -37,6 +37,9 @@
     "common": {
       "tags": []
     },
+    "ecs": {
+      "tags": []
+    },
     "frontend-app": {
       "tags": []
     },
