@@ -21,7 +21,11 @@ nx generate @nrwl/workspace:workspace-generator ecs-component-generator
 nx generate @nrwl/workspace:library --name=ecs --no-interactive
 ```
 
-
+# Generate ECS components
+```
+nx workspace-generator ecs-component-generator --componentName=GravityComponent
+nx workspace-generator ecs-component-generator --componentName=MovementComponent
+```
 
 # NxWorkspaceExample
 
