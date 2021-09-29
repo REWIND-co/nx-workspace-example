@@ -1,11 +1,17 @@
-# 
+# An Example Nx Workspace
 
-This repo is intended an example Nx workspace to accompony the REWIND XRLO article dicussing Nx.
-# Step 1 Initilise worksapce
+This repo is intended as an example Nx workspace. It accompanies the REWIND XRLO article discussing Nx. you can find the full write up at:
+
+
+[Choosing The Right Build Framework For Web Development](https://medium.com/xrlo-extended-reality-lowdown/choosing-the-right-build-framework-for-web-development-bd1dfc9e26a7)
+
+# Steps taken
+
+## Step 1 Initilise worksapce
 ```
 npx create-nx-workspace --preset=react
 ```
-# Step 2 Generate Libraries and App
+## Step 2 Generate Libraries and App
 ```
 yarn nx generate @nrwl/react:library --name=common --style=none --no-interactive
 yarn nx generate @nrwl/react:library --name=ui --style=none --no-interactive
@@ -15,23 +21,26 @@ yarn nx generate @nrwl/react:library --name=user-profiles --style=none --no-inte
 yarn nx generate @nrwl/web:application --name=backend-api --no-interactive
 ```
 
-# Step 3 Generate generator structure, and our ecs lib
+## Step 3 Generate generator structure, and our ecs lib
 ```
 nx generate @nrwl/workspace:workspace-generator ecs-component-generator
 nx generate @nrwl/workspace:library --name=ecs --no-interactive
 ```
 
-# Generate ECS components
+## Generate ECS components
 ```
 nx workspace-generator ecs-component-generator --componentName=GravityComponent
 nx workspace-generator ecs-component-generator --componentName=MovementComponent
 ```
 
-# NxWorkspaceExample
+
+
+
+
 
 This project was generated using [Nx](https://nx.dev).
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="150"></p>
 
 🔎 **Smart, Extensible Build Framework**
 
