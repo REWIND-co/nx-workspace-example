@@ -1,3 +1,6 @@
+import { UserSignup } from '@nx-workspace-example/user-signup';
+import { UserProfiles } from '@nx-workspace-example/user-profiles';
+
 /* eslint-disable-next-line */
 export interface UserSystemProps {}
 
